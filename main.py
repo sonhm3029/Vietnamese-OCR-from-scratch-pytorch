@@ -93,7 +93,7 @@ if __name__ == '__main__':
     print('Traininig Data Size:{}\nVal Data Size:{}'.format(
         len(args.data_train), len(args.data_val)))
     
-    args.alphabet = """Only thewigsofrcvdampbkuq.$A-210xT5'MDL,RYHJ"ISPWENj&BC93VGFKz();#:!7U64Q8?+*ZX/%""" 
+    args.alphabet = """AÀÁẢÃẠaàáảãạĂẰẮẲẴẶăằắẳẵặÂẦẤẨẪẬâầấẩẫậBbCcDdĐđEÈÉẺẼẸeèéẻẽẹÊỀẾỂỄỆêềếểễệGgHhIÌÍỈĨỊiìíỉĩịKkLlMmNnOÒÓỎÕỌoòóỏõọÔỒỐỔỖỘôồốổỗộƠỜỚỞỠỢơờớởỡợPpQqRrSsTtUÙÚỦŨỤuùúủũụƯỪỨỬỮỰưừứửữựVvXxYỲÝỶỸỴyỳýỷỹỵZz0123456789jJwWfF""" 
     args.nClasses = len(args.alphabet)
     model = CRNN(args)
     args.criterion = CustomCTCLoss()
