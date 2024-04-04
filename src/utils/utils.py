@@ -250,7 +250,7 @@ class OCRLabelConverter(object):
         self.alphabet = alphabet + '-'  # for `-1` index
 
         self.dict = {}
-        for i, char in enumerate(alphabet):
+        for i, char in enumerate(self.alphabet):
             # NOTE: 0 is reserved for 'blank' required by wrap_ctc
             self.dict[char] = i + 1
         self.dict[''] = 0
